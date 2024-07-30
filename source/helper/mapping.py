@@ -2,6 +2,15 @@ from ..library.datetime import Datetime
 
 
 def profile(data: dict):
+    """
+    Mapping profile data
+
+    Args:
+        data (dict): data from Insta.profile()
+
+    Returns:
+        dict: mapped data
+    """
     return {
         "fullname": data.full_name,
         "profile_picture_url": data.profile_picture_url_hd,
@@ -22,6 +31,15 @@ def profile(data: dict):
     }
 
 def followers(data: dict):
+    """
+    Mapping followers data
+
+    Args:
+        data (dict): data from Insta.followers()
+
+    Returns:
+        dict: mapped data
+    """
     return {
         "username": data.username,
         "fullname": data.full_name,
@@ -34,6 +52,15 @@ def followers(data: dict):
     }
 
 def followings(data: dict):
+    """
+    Mapping followings data
+
+    Args:
+        data (dict): data from Insta.followings()
+
+    Returns:
+        dict: mapped data
+    """
     return {
         "username": data.username,
         "fullname": data.full_name,
