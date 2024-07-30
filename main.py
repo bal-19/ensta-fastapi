@@ -6,7 +6,7 @@ from fastapi.responses import JSONResponse
 import uvicorn
 
 insta = InstaController()
-app = FastAPI(title="Instagram API", version="1.0.0", description="api to retrieve profile, followers and following data using Instagram username")
+app = FastAPI(title="Instagram API", version="1.0", description="api to retrieve profile, followers and following data using Instagram username")
 
 @app.get("/api/v1/profile")
 def get_profile(username: str):
